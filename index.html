@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nithin's Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6571ec2ba3.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo"><span class="logo-color">N</span>ITHIN.</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#portfolio">work</a></li>
+                    <li><a href="#content">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front-end Developer and UI Designer</p>
+                <h1>Hi, I'm <span>NITHIN </span><br>from kerala</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- about-->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/IMG_20231017_220006_323.png" alt="image" class="about-image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p><br>Hey, I'm Nithin Mohan<br><br>I'm a Front-end developer from Kerala (India).
+                        I'm a hardworking and dedicted person seeking a challenging and responsible role as a front-end developer.
+                         I love creating UI's that are 
+                        Simple, Elegant and Functional</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div> 
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>UI Designing</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Front end Development<br>HTML 5, CSS 3, Javascript</li>
+                            <li><span>Framework</span><br>Bootstrap</li>
+                            <li><span>Figma</span><br>User Interface Designing</li>
+                            <li><span>UX Design</span><br>User Research, Information Architecture<br>Wireframing, Prototyping</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2020 - 2021</span><br>ThinkerHub - Media Co-lead</li>
+                            <li><span>2021 - 2022</span><br>IEEE SB GECI - Activity co-ordinator</li>
+                            <li><span>2022</span><br>Electronics Department Co-ordinator</li>
+                        </ul>
+                    </div> 
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019 - 2023</span><br>Govt engineering college, Idukki (7.01 CGPA)</li>
+                            <li><span>2015 - 2017</span><br>st behanan's hss, vennikulam (92%)</li>
+                            <li><span>2013 - 2015</span><br>st behanan's hss, vennikulam (92%)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="My Hobbies">
+                        <ul>
+                            <li><span>2019 - 2023</span><br>Govt engineering college, Idukki (7.01 CGPA)</li>
+                            <li><span>2015 - 2017</span><br>st behanan's hss, vennikulam (92%)</li>
+                            <li><span>2013 - 2015</span><br>st behanan's hss, vennikulam (92%)</li>
+                        </ul>
+                    </div>      
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services-->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Frontend Development - Developing user interfaces of websites using HTML 5, CSS 3, Javascript </p>
+                    <a href="#"></a>    
+                </div>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>UI Design</h2>
+                    <p>Web and Mobile UI designing using Figma</p>
+                    <a href="#"></a>    
+                </div>
+<!---                <div>
+                 <i class="fas fa-code"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Asperiores repellendus iusto ipsa odio, voluptatum architecto.</p>
+                    <a href="#">Learn more</a>    
+                </div>  ---->   
+            </div>
+        </div>
+    </div>
+
+    <!---------portfolio---------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <h2 class="sub-title-1">Website Projects</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/portfolio web img.png">
+                    <div class="layer">
+                        <h3>Personal Portfolio Website</h3>
+                        <p> It is responsive website using HTM, CSS, Javascript. It includes my Skills, Experience, Education. I've included some hover animations using Css and javascript </p>
+                        <a href="#">More</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/BMW web img.png">
+                    <div class="layer">
+                        <h3>BMW Landing Page</h3>
+                        <p> Landing page of BMW Motorad with select color option using Javascript </p>
+                        <a href="./all link/bike-web.html">More</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/netflix img.png">
+                    <div class="layer">
+                        <h3>Netflix Logo Animation</h3>
+                        <p> Netflix logo animation using CSS</p>
+                        <a href="./all link/netflix.html">More</a>
+                    </div>
+                </div>
+            </div>
+    <!---      <a class="btn" href="#">btn</a> --->  
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            
+            <h2 class="sub-title-1">UI Designs</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/MacBook Pro 14_ - 1.png">
+                    <div class="layer">
+                        <h3>E Bike Landing Page</h3>
+                        <p></p>
+                       <!-- <a href="#">More</a>-->
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/Desktop - 1.png">
+                    <div class="layer">
+                        <h3>Food Delivery App Interfaces</h3>
+                        <p> </p>
+                       <!-- <a href="bike-web.html">More</a>-->
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/Frame 1.png">
+                    <div class="layer">
+                        <h3>bicycle landing Page</h3>
+                        <p></p>
+                       <!-- <a href="netflix.html">More</a> -->
+                    </div>
+                </div>
+            </div>
+               <a class="btn" href="#">btn</a> 
+        </div>
+    </div>
+
+    <!------------contact---------->
+
+
+    <div id="content">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>email: nithinmhere@gmail.com</p>
+                    <p><i class="fas fa-phone"></i>mob: 7306210361</p>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/nithin.here_?igshid=OGQ5ZDc2ODk2ZA=="><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <a href="./images/Nithin Mohan resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+<!---               <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="your email" required>
+                        <textarea name="message" rows="6" placeholder="your message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                </div>---> 
+            </div>
+        </div>
+        <div class="copyright">
+            <p>THANK YOU</p>
+        </div>
+    </div>
+
+ 
+<!----------About section javascript------>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+
+    <!-------menu action javascript---------->
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-125px";
+        }
+    </script>
+
+</body>
+</html>
